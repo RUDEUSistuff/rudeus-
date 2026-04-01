@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ultimate Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+<div id="startScreen">
+    <h1>⚡ Welcome</h1>
+    <button onclick="startApp()">Start</button>
+</div>
+
+<div id="app" style="display:none;">
+    <h2>Ultimate Calculator</h2>
+
+    <div class="btns">
+        <button onclick="setMode('math')">Math</button>
+        <button onclick="setMode('physics')">Physics</button>
+        <button onclick="setMode('shapes')">3D</button>
+        <button onclick="setMode('atoms')">Atoms</button>
+        <button onclick="setMode('puzzle')">Puzzle</button>
+    </div>
+
+    <div id="buttons"></div>
+    <div id="inputs"></div>
+
+    <input id="input" placeholder="Enter">
+
+    <div id="canvasBox"></div>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result"></p>
+    <p id="steps"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
